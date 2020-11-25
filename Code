@@ -1,0 +1,33 @@
+#Binary Search Algorithm
+
+def BinarySearch(lst,num):
+    pos=0
+    #lower bound
+    l=0
+    #upper bound
+    u=len(listt)-1
+    
+    
+    while l<=u:
+        mid=(l+u)//2
+        
+        if n==listt[mid]:
+            pos==mid
+            return True
+        else:
+            if listt[mid]<n:
+                l=mid+1
+            else:
+                u=mid-1
+                
+    return False
+
+listt=[21,76,98,43,90,33,25,74,97,78,10,9,22,33,4,45]
+listt.sort()
+n=int(input("Enter the element you want to search from the list:::"))
+
+if BinarySearch(listt,n)==True:
+    print(f"Element found at position {pos}")
+else:
+    print("Element not in listt !!!!")
+    
